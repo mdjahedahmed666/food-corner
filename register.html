@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <!-- Lato font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/Grid.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="css/signup.css"> -->
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>User Registration</title>
+</head>
+
+<body>
+  <header class="dropdown">
+    <nav id="navbar">
+      <div class="row">
+        <a class="navbar-brand" href="index.html">Food_Corner</a>
+        <ul class="main-nav-js">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">Services <i class="fas fa-caret-down caret-rotate"></i></a>
+            <ul>
+              <li><a href="getfood.html">Get Food</a></li>
+              <li><a href="working-area.html">Availability</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="register.html">Registration</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <a class="nav-icon nav-icon-js"><i class="fas fa-bars white-color fa-2x"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="row">
+    <form action="#" onsubmit="return formValidation()">
+      <div class="container">
+        <h1 class="regi-heading">Register Yourself</h1>
+        <hr>
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+        <span id="ename"></span>
+        <br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <span id="eemail"></span>
+        <br>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <span id="epsw"></span>
+        <br>
+
+        <label for="repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="repeat" id="repeat" required>
+        <span id="erepeat"></span>
+        <br>
+
+        <label for="psw"><b>Profession</b></label>
+        <input type="text" placeholder="Enter Profession" name="profession" id="profession" required>
+        <span id="eprofession"></span>
+        <br>
+
+        <label for="psw"><b>Payment Option</b></label>
+        <select name="payment" id="find-us" required>
+          <option class="option1" value="friends" selected>Bkash</option>
+          <option class="option1" value="search">Nogod</option>
+          <option class="option1" value="ad">Rocket</option>
+        </select>
+
+        <label for="mobile"><b>Mobile</b></label>
+        <input type="text" name="mobile" id="mobile" placeholder="Enter mobile number" required>
+        <br>
+        <span id="emobile"></span>
+        <br>
+
+        <label for="psw"><b>Address</b></label>
+        <textarea name="address" id="address" rows="4" placeholder="Enter Address"></textarea>
+        <br>
+        <span id="eaddress"></span>
+        <br>
+
+        <hr>
+
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a> .</p>
+
+        <button type="submit" class="registerbtn"><a href="#">Register</a></button>
+        <br><br>
+
+        <div class="signin">
+          <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+        </div>
+      </div>
+
+
+    </form>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-2">
+        <ul class="footer-nav">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="col span-1-of-2">
+        <ul class="social-nav">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p>
+        Copyright &copy; <span id="year"></span> by Food Corner. All Rights
+        reserved by JIT.
+      </p>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="JavaScript/script.js"></script>
+  <script src="JavaScript/reg.js"></script>
+
+</body>
+
+</html>

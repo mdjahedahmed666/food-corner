@@ -1,0 +1,258 @@
+/* Laptop Screen */
+
+@media only screen and (max-width: 1200px) {
+    .hero .hero-text-box {
+        position: absolute;
+        width: 100%;
+        padding: 0 2%;
+      }
+      .row {
+          padding: 0 2%;
+      }
+      .steps-box:first-child {
+           margin-top: 30px; 
+        }
+        .steps-box{
+            margin-top: 20px;
+        }
+        .steps-box:last-child{
+            margin-top: 20px;
+        }
+        .img-app{ 
+            width: 50%; 
+        }
+}
+
+/* Small Tablet to Big Tablet */
+
+@media only screen and (max-width: 1023px) {
+
+    body{
+        font-size: 18px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .features-text{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .steps-box{
+        margin-top: 20px;
+    }
+    .steps-box:last-child{
+        margin-top: 20px;
+    }
+    .steps { 
+        margin-top: 30px;
+        margin-bottom: 50px; 
+    }
+    .step:last-of-type { 
+        margin-bottom: 50px; 
+    }
+    .img-app{ 
+        margin-top: 40px;
+        width: 50%; 
+    }
+    .small-icon{
+        width: 18px;
+        margin-right: 5px;
+        font-size: 60%;
+      }
+      .btn-app img{
+        height:50px;
+        width:auto;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .contact-form { 
+        width: 80%; 
+    }
+
+    
+}
+
+/* small phone to small tablet */
+@media only screen and (max-width: 767px) {
+    body { 
+        font-size: 16px; 
+    }
+    section { 
+        padding: 50px 0; 
+    }
+    .row,
+    .hero-text-box,
+    .col{
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    nav ul{
+        display: none;
+    }
+    .nav-icon{
+    display: inline-block;
+    }
+    .white-color {
+        color: #fff;
+    }
+    nav ul {
+        float: left;
+        margin-top: 8px;
+        
+        margin-left: -10px;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        width: 200px;
+        height: 60px;
+        text-align: center;
+    }
+
+    nav ul li a:link,
+    nav ul li a:visited {
+        display: block;
+        border: 0;
+        padding: 0 0 15px 0;
+        font-size: 100%;
+    }
+
+    /* nested dropdown*/
+    
+nav ul ul{
+    position: absolute;
+    top: -6px;
+    left: 210px;
+    display: none;
+  }
+  
+  nav ul li:hover> ul{
+    display: block;
+    color: black;
+    
+  }
+  
+  nav ul ul li{
+    width: 100%;
+    /* float: none; */
+    display: list-item;
+    position: relative;
+  }
+  nav ul ul li a{
+    text-align: center;
+  }
+
+    .sticky .nav-icon { 
+        margin-top: 20px; 
+    }
+    
+    h1 { 
+        font-size: 180%; 
+    }
+    h2 { 
+        font-size: 150%; 
+    }
+    
+    .features-text {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .img-app { 
+        width: 40%; 
+    }
+    .steps-box:first-child { 
+        text-align: center; 
+    }
+    
+    .steps div {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+    
+    .steps { 
+        margin-bottom: 20px; 
+    }
+    .steps:last-of-type { 
+        margin-bottom: 20px; 
+    }
+
+    .sidebar{
+        display: block;
+        width: 100%;
+      }
+      .send-it a{
+        width: 100%;
+        text-align: center;
+    }
+    .caret-rotate{
+        transform: rotate(-90deg);
+    }
+      
+}
+
+ /* Small Phone */
+
+@media only screen and (max-width: 480px) {
+    section { 
+        padding: 45px 0;
+    }
+    .contact-form {
+        width: 100%; 
+    }
+    .send-it a{
+        width: 100%;
+        text-align: center;
+    }
+    .btn1{
+        margin-bottom: 8px;
+    }
+    
+    .footer-nav{
+        display: block;
+      }
+      
+      .social-nav{
+        display: none;
+      }
+      
+    nav ul {
+        float: left;
+        margin-top: 0px;
+        margin-left: -10px;
+    }
+  
+    nav ul li a{
+        width: 180px;
+    }
+
+    nav ul li a:link,
+    nav ul li a:visited {
+        font-size: 90%;
+    }
+
+    /* dropdown nested */
+    
+nav ul ul{
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    display: none;
+  }
+  
+  nav ul ul li{
+    width: 80%;
+  }
+  nav ul ul li a{
+    text-align: center;
+  } 
+}

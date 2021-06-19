@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <!-- Lato font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/Grid.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Login To Your Account</title>
+</head>
+<body>
+    <header class="dropdown">
+        <nav id="navbar">
+          <div class="row">
+              <a class="navbar-brand" href="index.html">Food_Corner</a>
+              <ul class="main-nav-js">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="#">Services <i class="fas fa-caret-down caret-rotate"></i></a>
+                  <ul>
+                    <li><a href="getfood.html">Get Food</a></li>
+                    <li><a href="working-area.html">Availability</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            <a class="nav-icon nav-icon-js"
+              ><i class="fas fa-bars white-color fa-2x"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+    
+    <section class="form-mt">
+      <div class="row">
+        <form action="#" method="post" onsubmit="return loginValidation()">
+          <div class="imgcontainer">
+            <img src="images/avatar.png" alt="Avatar" class="avatar">
+          </div>
+        
+          <div class="container">
+            <label for=uname"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="uname" id="logemail" required>
+            <span id="elogemail"></span>
+            <br>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="logpsw" required>
+            <span id="elogpsw"></span>
+            <br><br>
+        
+            <button type="submit"><a class="loginbutton" href="#">Login</a></button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        
+          <div class="container" style="background-color:#f1f1f1">
+            <span class="signup-click"><a href="register.html">Signup here</a></span>
+            <span class="forgot-psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>
+    
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col span-1-of-2">
+          <ul class="social-nav">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          Copyright &copy; <span id="year"></span> by Food Corner. All Rights
+          reserved by JIT.
+        </p>
+      </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/reg.js"></script>
+    
+</body>
+</html>

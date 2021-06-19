@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <!-- Lato font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/Grid.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Contact with us</title>
+</head>
+
+<body>
+    <header class="dropdown">
+        <nav id="navbar">
+          <div class="row">
+              <a class="navbar-brand" href="index.html">Food_Corner</a>
+              <ul class="main-nav-js">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="#">Services <i class="fas fa-caret-down caret-rotate"></i></a>
+                  <ul>
+                    <li><a href="getfood.html">Get Food</a></li>
+                    <li><a href="working-area.html">Availability</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            <a class="nav-icon nav-icon-js"
+              ><i class="fas fa-bars white-color fa-2x"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+
+<!-- contact section -->
+    <section class="contact">
+        <div class="row">
+            <h2 class="contact-heading">We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form class="contact-form" method="post" action="#">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option class="option1" value="friends" selected>Friends</option>
+                            <option class="option1" value="search">Search engin</option>
+                            <option class="option1" value="ad">Advertisement</option>
+                            <option class="option1" value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" id="news" name="news" checked> Yes, Please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Enter your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3 send-it">
+                        <a class="btn btn-full" href="#">Send it</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="row">
+          <div class="col span-1-of-2">
+            <ul class="footer-nav">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col span-1-of-2">
+            <ul class="social-nav">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Copyright &copy; <span id="year"></span> by Food Corner. All Rights
+            reserved by JIT.
+          </p>
+        </div>
+      </footer>
+
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="JavaScript/script.js"></script>
+      
+</body>
+</html>

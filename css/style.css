@@ -1,0 +1,732 @@
+/* Custom CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/* Defining the row */
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Defining the section padding */
+section {
+  padding: 80px 0;
+}
+
+
+/* defining Headings */
+h1,
+h2,h3{
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 200%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width:100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    font-size: 120%;
+    margin-bottom: 15px;
+}
+
+
+/* defining buttons */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+
+/* Header Navbar */
+
+nav{
+  width: 100%;
+  height: 70px;
+  background: #2c3e50;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand{
+  color: #fff;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 140%;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:9999;
+}
+
+.sticky nav{
+  margin-top: 18px;
+}
+
+.sticky nav ul li a:link,
+.sticky nav ul li a:visited{
+  padding: 16px 0;
+}
+
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  background: #2c3e50;
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  
+}
+nav ul li a{
+  display: block;
+  padding: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 19px;
+  width: 100%;
+}
+
+nav ul li a:hover{
+  background: #000;
+  color: #fff;
+}
+
+nav ul ul{
+  position: absolute;
+  top: 70px;
+  display: none;
+}
+
+nav ul li:hover> ul{
+  display: block;
+}
+
+nav ul ul li{
+  width: 100%;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul li a{
+  text-align: center;
+}
+
+.nav-icon{       
+  float: right;
+  margin-top: 18px;
+  cursor: pointer;
+  display:none;
+
+}
+
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), #000),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.hero .hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Features Secion */
+.features-text{
+    line-height: 140%;
+    width: 65%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.box{
+    padding: 1%;
+    text-align: center;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 140%;
+    text-align: left;
+}
+
+.box .fa-2x{
+    color:#e67e22;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar{
+  margin-top: 30px;
+  background: #f4f4f4;
+  float: left;
+  width:33%;
+  text-align: center;
+  font-size: 100%;
+}
+
+.sidebar h2{
+  padding: 10px;
+}
+
+.sidebar1{
+  margin: 0px 10px 20px 10px;
+  padding:30px;
+  border: 1px solid #e67e22;
+  border-radius: 10%;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar div:hover{
+  background: #e67e22;
+}
+
+/* Popular meals */
+
+.meals{
+    background-color: #485769;
+}
+
+.meals-title{
+    color: #fff;
+}
+
+.meals .showcase{
+    list-style-type: none;
+    width: 100%;
+}
+
+.meals .showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-img{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s opacity 0.5s;
+    opacity: 0.7;
+}
+
+.meal-img img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.meals-text{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Working steps */
+
+.works {
+  background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 60px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.img-app{
+    width: 40%;
+}
+
+.steps{
+    margin-bottom: 50px;
+}
+
+.steps div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    height: 50px;
+    width:50px;
+    border-radius:50%;
+    text-align: center;
+    padding:5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+  border: 0;
+}
+
+.btn-app img{
+    height:50px;
+    width:auto;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+
+/* Working cities */
+
+.box img{
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px;
+}
+.city-feature {
+  margin-bottom: 5px;
+  font-size: 90%;
+  text-align: left;
+}
+
+.small-icon{
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 80%;
+  margin-right: 10px;
+  line-height: 110%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+.city-feature a:link,
+.city-feature a:visited{
+  color: #e67e22 ;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2;
+}
+
+.city-feature a:hover,
+.city-feature a:active{
+color: #000;
+border-bottom: 1px solid transparent;
+}
+
+
+/* Customer Review */
+
+.review{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),#000) ,url(../images/review.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote{
+  padding: 4%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 70px;
+
+}
+blockquote::before{
+  position: absolute;
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  top: -5px;
+  left: -5px;
+
+}
+
+cite{
+  font-size: 90%;
+  margin-top: 40px;
+  display: block;
+}
+
+cite img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/* User Registration */
+
+span{
+  color: red;
+}
+
+.container {
+    padding: 16px;
+    background-color: #fff;
+  }
+
+  .regi-heading{
+      color: #000;
+      text-align: center;
+  }
+  
+  /* Full-width input fields */
+  input[type=text],
+  input[type=password],
+  textarea,
+  select{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, 
+  input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style to the submit button */
+.registerbtn {
+    background-color: #e67e22;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+  }
+  .registerbtn:hover {
+    background: #62bb66;
+  }
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+
+  /* plan and sign up */
+
+  .plans{
+    background-color: #f4f4f4;
+  }
+  
+  .plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5px;
+    box-shadow: 0 2px 2px #efefef;
+  }
+  
+  .plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .plan div:last-child{
+    text-align: center;
+    border: 0;
+  }
+  
+  .plan-price{
+    font-size: 250%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+  }
+  
+  .plan-price span{
+    font-size: 60%;
+  }
+  
+  .plan-price-meal{
+    font-size: 70%;
+  }
+  
+  .plan-box ul{
+    list-style: none;
+  }
+  
+  .plan-box ul li{
+    padding: 5px 0;
+  }
+
+
+/* Contact-form */
+
+.contact-form{
+  width: 70%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea{
+  height: 100px;
+}
+
+input[type=checkbox]{
+  margin: 10px 5px 10px 0;
+}
+
+::placeholder{ 
+  opacity: 1;
+  font-size: 130%;
+}
+
+#find-us{
+  font-size: 90%;
+}
+
+
+/* Login form */
+/* Bordered form */
+form {
+  border: 1px solid #e2dbd5;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style to buttons */
+button {
+  background-color: #e67e22;
+  padding: 14px 20px;
+  margin: 15px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button .loginbutton{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+}
+
+button:hover {
+  background: #62bb66;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 25%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 30px;
+}
+
+/* Forgot password" test*/
+span.forgot-psw {
+  float: right;
+  padding-top: 0px;
+  font-size: 90%;
+}
+span.signup-click {
+  float: left;
+  padding-top: 0px;
+  font-size: 90%;
+}
+
+
+/* Footer CSS */
+
+footer{
+  background-color: #232f3e;
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav{
+  list-style: none;
+  float: left;
+}
+
+.social-nav{
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-nav li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-nav li:last-child {
+  margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.social-nav li a:link,
+.footer-nav li a:visited,
+.social-nav li a:visited {
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+  color: #e67e22;
+}
+
+.social-nav li a:hover,
+.social-nav li a:active{
+  color: #3b5998;
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
